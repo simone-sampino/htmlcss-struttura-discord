@@ -1,5 +1,87 @@
+/* #region Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* #endregion Reset */
+
+/* #region Root */
+:root {
+    --ds-bg-gray:lightgray;
+    --ds-bg-white:#fff;
+    --ds-bg-header:lightblue;
+    --ds-bg-navbar:goldenrod;
+    --ds-bg-jumbotron:darkblue;
+    --ds-bg-jumbotron-content:violet;
+    --ds-bg-lg-col:dodgerblue;
+    --ds-bg-sm-col:pink;
+    --ds-bg-full-col:darkgreen;
+    --ds-bg-footer-top:cyan;
+    --ds-bg-footer-left:lightcoral;
+    --ds-bg-footer-right:aquamarine;
+    --ds-bg-footer-bottom:aqua;
+}
+/* #endregion Root */
+
+/* #region Debug */
+.debug {
+
+    .border {
+    border: 2px dashed black;
+    }
+
+    header {
+        background-color: var(--ds-bg-header);
+    }
+
+    .navbar > * {
+        background-color: var(--ds-bg-navbar);
+    }
+}
+/* #endregion Debug */
+
+/* #region Generics */
+body {
+    font-family: sans-serif;
+}
+/* #endregion Generics */
+
+/* #region Utils */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+/* #endregion Utils */
+
+/* #region Header */
+header {
+
+    .navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar-menu {
+    flex-grow: 1;
+    text-align: center;
+    }
+
+    .navbar-actions {
+    text-align: right;
+    }
+
+    }
+}
+
+.navbar > * {
+    flex-basis: 20%;
+    padding: 10px 0;
+}
+
+/* #endregion Header */
