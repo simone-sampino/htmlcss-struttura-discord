@@ -28,7 +28,7 @@
 .debug {
 
     .border {
-    border: 2px dashed black;
+        border: 2px dashed black;
     }
 
     header {
@@ -37,6 +37,14 @@
 
     .navbar > * {
         background-color: var(--ds-bg-navbar);
+    }
+
+    .jumbotron {
+        background-color: var(--ds-bg-jumbotron);
+    }
+
+    .jumbotron-content {
+        background-color: var(--ds-bg-jumbotron-content);
     }
 }
 /* #endregion Debug */
@@ -85,3 +93,15 @@ header {
 }
 
 /* #endregion Header */
+
+/* #region Jumbotron */
+.jumbotron {
+    height: 500px;
+    padding: 60px 0;
+    justify-content: center;
+}
+
+.jumbotron-content {
+    width: 50%;
+}
+/* #endregion Jumbotron */
